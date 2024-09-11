@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 585px;
+    width: 290px;
+}
+
+iframe#tela {
+    width: 80vw;
+    background-color: #aaf0d1;
+}
+
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0px 18px 18px 0px;
+    min-width: 68px;
+    position: relative;
+    transition: min-width 0.3s ease, background-color 0.3s ease;
+  }
+
+.sidebar.open-sidebar {
+    width: 160px;
+}
+
+.sidebar_content {
+    padding: 12px;
+}
+
+.side_itens {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.side_item {
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.side_item.active {
+    background-color: #aaf0d1; /* Cor do botão ativo */
+}
+
+.side_item:hover {
+    background-color: #d0f0ff; /* Cor ao passar o mouse */
+}
+
+.side_item a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.item-description {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.open_btn {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    background-color: #cfffff;
+    color: black;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }
+
+.sidebar.open-sidebar .item-description {
+    display: inline; /* Mostra o texto quando a sidebar está aberta */
+}
+
+.item-description {
+    display: none; /* Esconde o texto quando a sidebar está fechada */
+}
+
+.sidebar.open-sidebar .item-description {
+    display: inline-block; /* Mostra o texto ao abrir a sidebar */
+}

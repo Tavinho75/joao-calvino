@@ -1,0 +1,20 @@
+
+p.BOS {
+    font: "Bookman Old Style";
+}
+
+p.BA {
+    font: "Book Antiqua";
+    text-align: center;
+    color: #990000;
+    size: "5";
+}
+
+p.B2A {
+    font: "Book Antiqua";
+    size: "2";
+}
+
+p.TMS {
+    font: "Trebuchet MS";
+}
